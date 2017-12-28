@@ -1,0 +1,117 @@
+/* Base--------------------------------------------------- */
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --mar-r: 20px;
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+  margin: 0 auto;
+}
+
+header {
+  background-color: #7477BF;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+}
+
+/* ------------------------------- */
+
+#bell {
+  width: 25px;
+  height: 25px;
+  margin-right: var(--mar-r);
+}
+
+.robot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+.app {
+  color: #fff;
+  font-size: 30px;
+  margin: 0px 10px 10px;
+}
+
+.notify {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.name {
+  display: inline-block;
+  color: #fff;
+  margin: 0;
+
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-left: 1px solid black;
+}
+
+/* -------------------------------------------------------------- */
+
+.body {
+  display: flex;
+  height: 100%;
+}
+
+
+.nav-div {
+  background-color: #4D4C72;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+}
+
+.nav-div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-div ul li {
+}
+
+/* -------------------------------------------------------------- */
+
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+  }
+  .app {
+    margin: 0px 10px;
+  }
+}
