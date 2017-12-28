@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -21,8 +21,8 @@
       </div><!--user-->
     </div>  <!--notify-->
   </header>
-  <div class="body clearfix">
-    <div class="nav-div">
+  <div class="main__data--body">
+    <div class="main__data--nav">
       <nav>
         <ul>
           <li><svg viewBox="0 0 32 32">
@@ -40,19 +40,39 @@
         </ul>
       </nav>
     </div>
-    <div class="main-sec">
-      <nav>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="main__data--db">
+      <section class="data--traffic grid__col--12">
+        <div class="alert">
+          <p><strong>Alert</strong>   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Immo alio genere </p><button>X</button>
+        </div>
+        <h2>TRAFFIC</h1>
+      </section>
+      <section class="data--daily grid__col--6">
+        <h2>DAILY TRAFFIC</h1>
+      </section>
+      <section class="data--mobile grid__col--6">
+        <h2>MOBILE USERS</h1>
+      </section>
+      <section class="data--social grid__col--12">
+        <h2>SOCIAL STATS</h1>
+      </section>
+      <section class="data--nm grid__col--6">
+        <h2>NEW MEMBERS</h1>
+      </section>
+      <section class="data--ra grid__col--6">
+        <h2>RECENT ACTIVITY</h1>
+      </section>
+      <section class="data--messager grid__col--6">
+        <h2>MESSAGE USER</h1>
+      </section>
+      <section class="data--settings grid__col--6">
+        <h2>SETTINGS</h1>
+      </section>
+    </div> <!--  "main__data--db" -->
   </div>
 
 
 
-
+<script src="app.js" charset="utf-8"></script>
 </body>
 </html>
