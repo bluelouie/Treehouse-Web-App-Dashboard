@@ -20,7 +20,7 @@ header {
   flex-wrap: wrap;
   padding: 10px;
   align-items: center; }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     header {
       flex-direction: row; } }
 
@@ -50,7 +50,7 @@ svg {
   color: #fff;
   font-size: 30px;
   margin: 0px 10px 10px; }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     .app {
       margin: 0px 10px; } }
 
@@ -73,7 +73,7 @@ svg {
 /* --------------Main section------------------------------------------------ */
 .main__data--body {
   height: 100%; }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     .main__data--body {
       display: flex; } }
 
@@ -84,7 +84,7 @@ svg {
   height: 50px;
   padding: 10px;
   display: block; }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     .main__data--nav {
       width: 50px;
       height: 100%; } }
@@ -92,13 +92,13 @@ svg {
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       .main__data--nav ul {
         flex-direction: column;
         justify-content: space-between; } }
   .main__data--nav ul li {
     margin: 0 auto; }
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       .main__data--nav ul li {
         margin-bottom: 25px; } }
 
