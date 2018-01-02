@@ -1,225 +1,57 @@
-/* Base--------------------------------------------------- */
-* {
-  box-sizing: border-box; }
-
-:root {
-  --mar-r: 20px; }
-
-html,
-body {
-  height: 100%; }
-
-body {
-  margin: 0 auto; }
-
-header {
-  background-color: #7477BF;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 10px;
-  align-items: center; }
-  @media (min-width: 768px) {
-    header {
-      flex-direction: row; } }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-svg {
-  width: 25px;
-  height: 25px; }
-
-/* ------------------------------- */
-#bell {
-  width: 25px;
-  height: 25px;
-  margin-right: var(--mar-r); }
-
-.robot {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 7px;
-  margin-left: 7px; }
-
-.app {
-  color: #fff;
-  font-size: 30px;
-  margin: 0px 10px 10px; }
-  @media (min-width: 768px) {
-    .app {
-      margin: 0px 10px; } }
-
-.notify {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
-.name {
-  display: inline-block;
-  color: #fff;
-  margin: 0; }
-
-.user {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-left: 1px solid black; }
-
-/* --------------Main section------------------------------------------------ */
-.main__data--body {
-  height: 100%; }
-  @media (min-width: 768px) {
-    .main__data--body {
-      display: flex; } }
-
-/* --------------Nav Bar section------------------------------------------------ */
-.main__data--nav {
-  background-color: #4D4C72;
-  width: 100%;
-  height: 50px;
-  padding: 10px;
-  display: block; }
-  @media (min-width: 768px) {
-    .main__data--nav {
-      width: 50px;
-      height: 100%; } }
-  .main__data--nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    @media (min-width: 768px) {
-      .main__data--nav ul {
-        flex-direction: column;
-        justify-content: space-between; } }
-  .main__data--nav ul li {
-    margin: 0 auto; }
-    @media (min-width: 768px) {
-      .main__data--nav ul li {
-        margin-bottom: 25px; } }
-
-/* --------------Main data section------------------------------------------------ */
-.main__data--db {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap; }
-
-[class^='data--'] {
-  border: 1px solid black; }
-  [class^='data--'] h2 {
-    padding: 7px;
-    font-size: 18px; }
-
-.alert {
-  color: #fff;
-  width: 82%;
-  position: relative;
-  left: 8%;
-  background-color: #7477BF;
-  border-radius: 5px;
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  margin-top: 7px; }
-  .alert p {
-    margin: 0; }
-  .alert button {
-    color: white;
-    background-color: #7477BF;
-    border-style: none; }
-
 /*
- Imports -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-.grid__col--1 {
-  width: 100%; }
+Error: Invalid CSS after "    fon": expected "{", was "}"
+        on line 262 of css/style.scss
 
-.grid__col--2 {
-  width: 100%; }
+257:     }
+258:   }
+259:   &:after {
+260:     content: '>';
+261:     fon
+262:   }
+263: }
+264: 
+265: .member--ra li:nth-of-type(n+2) {
+266:   border-top: 1px solid black;
+267: }
 
-.grid__col--3 {
-  width: 100%; }
-
-.grid__col--4 {
-  width: 100%; }
-
-.grid__col--5 {
-  width: 100%; }
-
-.grid__col--6 {
-  width: 100%; }
-
-.grid__col--7 {
-  width: 100%; }
-
-.grid__col--8 {
-  width: 100%; }
-
-.grid__col--9 {
-  width: 100%; }
-
-.grid__col--10 {
-  width: 100%; }
-
-.grid__col--11 {
-  width: 100%; }
-
-.grid__col--12 {
-  width: 100%; }
-
-@media (min-width: 600px) {
-  .grid__col--1 {
-    width: 8.2174462705%; }
-
-  .grid__col--2 {
-    width: 16.5613147914%; }
-
-  .grid__col--3 {
-    width: 24.9051833123%; }
-
-  .grid__col--4 {
-    width: 33.2490518331%; }
-
-  .grid__col--5 {
-    width: 41.592920354%; }
-
-  .grid__col--6 {
-    width: 49.9367888748%; }
-
-  .grid__col--7 {
-    width: 58.2806573957%; }
-
-  .grid__col--8 {
-    width: 66.6245259166%; }
-
-  .grid__col--9 {
-    width: 74.9683944374%; }
-
-  .grid__col--10 {
-    width: 83.3122629583%; }
-
-  .grid__col--11 {
-    width: 91.6561314791%; }
-
-  .grid__col--12 {
-    width: 100%; } }
-@media (min-width: 1px) and (max-width: 768px) {
-  [class^="grid__col--"] {
-    margin-top: 0.75em;
-    margin-bottom: 0.75em;
-    width: 100%; } }
-@media (min-width: 769px) {
-  [class^="grid__col--"] {
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px; }
-    [class^="grid__col--"] + [class^="grid__col--"] {
-      margin-left: 0.1264222503%; } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+css/style.scss:262
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:677:in `block'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    fon\": expected \"{\", was \"}\"\A         on line 262 of css/style.scss\A \A 257:     }\A 258:   }\A 259:   &:after {\A 260:     content: '>';\A 261:     fon\A 262:   }\A 263: }\A 264: \A 265: .member--ra li:nth-of-type(n+2) {\A 266:   border-top: 1px solid black;\A 267: }"; }
