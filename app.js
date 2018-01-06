@@ -1,6 +1,48 @@
 
 
-const closeButton = document.querySelector('.alert button');
+var closeButton = document.querySelector('.alert button');
+var send = document.querySelector('.send');
+
+function messageConfirm() {
+  var user = document.querySelector('.user');
+  var userMessage = document.querySelector('.message');
+  var errorMessage = document.querySelector('selector');
+  var para = document.createElement("h4");
+  var element = document.querySelector('.data--messager');
+
+  if (user.value == '' || userMessage.value == '') {
+    var node = document.createTextNode("Error, please check your message again!");
+    para.appendChild(node);
+    para.classList.add('error')
+
+    element.appendChild(para);
+  } else {
+    var node = document.createTextNode("Message succesful!");
+    para.appendChild(node);
+    para.classList.add('success')
+
+    element.appendChild(para);
+  }
+  setTimeout(function () { para.remove(para); }, 3000);
+}
+
+
+
+
+send.addEventListener('click', messageConfirm);
+
+window.addEventListener('load', function() {
+  const a = document.querySelector('.alert');
+  setTimeout(function () {a.style.display = 'flex';}, 2000);
+});
+
+closeButton.addEventListener('click', function() {
+  const a = document.querySelector('.alert');
+  a.style.display = 'none';
+});
+
+
+
 // LineChart-----------------------------------------------------------------------------------------------------------------------------------------------
 
 //---x-axis
@@ -57,7 +99,7 @@ var ctxBar = document.getElementById("myBarChart");
 var dataBar = {
   labels: mobile,
   datasets: [{
-    backgroundColor: 'rgba(221, 219, 234, .7)',
+    backgroundColor: '#7477bf',
     borderColor: 'rgba(221, 219, 234, .7)',
     borderWidth: 2,
     hoverBackgroundColor: 'rgba(221, 219, 234, .7)',
@@ -97,7 +139,7 @@ var ctxCircle = document.getElementById("myCircleChart");
 var dataCircle = {
   labels: mobile,
   datasets: [{
-    backgroundColor: 'rgba(221, 219, 234, .7)',
+    backgroundColor: [ '#7477bf', '#ff002d', '#12dfdf' ],
     borderColor: 'rgba(221, 219, 234, .7)',
     borderWidth: 2,
     hoverBackgroundColor: 'rgba(221, 219, 234, .7)',
@@ -119,12 +161,3 @@ var myDoughnutChart = new Chart(ctxCircle, {
 });
 
 // Circle chart-----------------------------------------------------------------------------------------------------------------------------------------------
-window.addEventListener('load', setTimeout(function (e) {
-  const a = document.querySelector('.alert');
-  a.style.display = 'flex';
-}, 2000));
-
-closeButton.addEventListener('click', function() {
-  const a = document.querySelector('.alert');
-  a.style.display = 'none';
-});

@@ -1,57 +1,505 @@
-/*
-Error: Invalid CSS after "    fon": expected "{", was "}"
-        on line 262 of css/style.scss
+/* Base--------------------------------------------------- */
+* {
+  box-sizing: border-box; }
 
-257:     }
-258:   }
-259:   &:after {
-260:     content: '>';
-261:     fon
-262:   }
-263: }
-264: 
-265: .member--ra li:nth-of-type(n+2) {
-266:   border-top: 1px solid black;
-267: }
+:root {
+  --mar-r: 20px; }
 
-Backtrace:
-css/style.scss:262
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:677:in `block'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    fon\": expected \"{\", was \"}\"\A         on line 262 of css/style.scss\A \A 257:     }\A 258:   }\A 259:   &:after {\A 260:     content: '>';\A 261:     fon\A 262:   }\A 263: }\A 264: \A 265: .member--ra li:nth-of-type(n+2) {\A 266:   border-top: 1px solid black;\A 267: }"; }
+/* html,
+body {
+  height: 100%;
+} */
+body {
+  margin: 0 auto; }
+
+header {
+  background-color: #7477BF;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center; }
+  @media (min-width: 768px) {
+    header {
+      flex-direction: row; } }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+svg {
+  width: 25px;
+  height: 25px; }
+
+/* ------------------------------- */
+#bell {
+  width: 25px;
+  height: 25px;
+  margin-right: var(--mar-r); }
+
+.robot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 7px;
+  margin-left: 7px; }
+
+.app {
+  color: #fff;
+  font-size: 30px;
+  margin: 0px 10px 10px; }
+  @media (min-width: 768px) {
+    .app {
+      margin: 0px 10px; } }
+
+.notify {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.name {
+  display: inline-block;
+  color: #fff;
+  margin: 0; }
+
+.userNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-left: 1px solid black; }
+
+/* --------------Main section------------------------------------------------ */
+@media (min-width: 768px) {
+  .main__data--body {
+    display: flex; } }
+
+/* --------------Nav Bar section------------------------------------------------ */
+.main__data--nav {
+  background-color: #4D4C72;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  display: block; }
+  @media (min-width: 768px) {
+    .main__data--nav {
+      width: 6%;
+      height: 2060px; } }
+  @media (min-width: 875px) {
+    .main__data--nav {
+      height: 1865px; } }
+  @media (min-width: 904px) {
+    .main__data--nav {
+      height: 1750px; } }
+  .main__data--nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    @media (min-width: 768px) {
+      .main__data--nav ul {
+        flex-direction: column;
+        justify-content: space-between; } }
+  .main__data--nav ul li {
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      .main__data--nav ul li {
+        margin-bottom: 25px; } }
+
+/* --------------Main data section------------------------------------------------ */
+.main__data--db {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    .main__data--db {
+      width: 94%; } }
+  .main__data--db section {
+    padding: 0 20px 10px; }
+
+.data--title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E5E5E5;
+  width: 100%;
+  flex-wrap: wrap;
+  align-self: flex-start; }
+  .data--title h1 {
+    background-color: white;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 450px) {
+      .data--title h1 {
+        width: 170px; } }
+  .data--title .field {
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    align-self: center;
+    margin: 5px 10px;
+    padding: 7px; }
+    @media (min-width: 450px) {
+      .data--title .field {
+        width: 45%; } }
+
+.icon {
+  position: absolute;
+  right: 22px; }
+
+input:placeholder {
+  font-size: 1px; }
+
+[class^='data--']:nth-of-type(n+2) {
+  border: 1px solid black; }
+  [class^='data--']:nth-of-type(n+2) h2 {
+    padding: 7px 7px 7px 0;
+    font-size: 18px; }
+
+.alert {
+  color: #fff;
+  width: 82%;
+  position: relative;
+  left: 8%;
+  background-color: #7477BF;
+  border-radius: 5px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 7px; }
+  .alert p {
+    margin: 0; }
+  .alert button {
+    color: white;
+    background-color: #7477BF;
+    border-style: none; }
+
+.chart-container {
+  position: relative;
+  margin: auto; }
+
+/*Widgets -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.widgets {
+  display: flex;
+  padding: 0px 10px 10px;
+  flex-wrap: wrap; }
+  .widgets li {
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    display: flex;
+    width: 256px; }
+    .widgets li svg {
+      width: 85px;
+      height: 85px;
+      overflow: visible;
+      fill: white;
+      background-color: #7477BF;
+      border-radius: 50%;
+      padding: 16px;
+      margin: 20PX; }
+    .widgets li h2 {
+      color: purple;
+      font-size: 20px; }
+    .widgets li h2 span {
+      display: block;
+      font-size: 40px; }
+
+/*Memberlist -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.member--list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 0;
+  width: 95%;
+  flex-wrap: wrap; }
+  .member--list li div {
+    display: flex;
+    align-items: center; }
+    .member--list li div img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; }
+    .member--list li div h3 {
+      margin: 15px 0px 15px 10px; }
+      .member--list li div h3 a {
+        display: block;
+        margin: 0; }
+
+.member--list li:nth-of-type(n+2) {
+  border-top: 1px solid black; }
+
+/*Recent ACTIVITY -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.member--ra li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 0;
+  width: 95%;
+  flex-wrap: wrap; }
+  @media (min-width: 600px) and (max-width: 880px) {
+    .member--ra li {
+      height: 150px; } }
+  .member--ra li div {
+    display: flex;
+    align-items: center; }
+    .member--ra li div img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; }
+    .member--ra li div p {
+      display: block;
+      margin-left: 10px; }
+  .member--ra li:after {
+    content: '>'; }
+
+.member--ra li:nth-of-type(n+2) {
+  border-top: 1px solid black; }
+
+/*messager -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.data--messager {
+  display: flex;
+  flex-direction: column; }
+  .data--messager input, .data--messager textarea {
+    width: 90%;
+    margin: 0 auto 15px; }
+  .data--messager .user {
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%; }
+  .data--messager .message {
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+    border: 1px solid black;
+    width: 100%; }
+  .data--messager .send {
+    color: white;
+    background-color: #7477BF;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%; }
+  .data--messager .error {
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    margin: 3px auto; }
+  .data--messager .success {
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    background-color: green;
+    padding: 10px;
+    margin: 3px auto; }
+
+/*settings -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/*Sliders*/
+.onoffswitch {
+  position: relative;
+  width: 106px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.onoffswitch-checkbox {
+  display: none; }
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #E3E3E3;
+  border-radius: 24px; }
+
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s; }
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 33px;
+  padding: 0;
+  line-height: 33px;
+  font-size: 16px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box; }
+
+.onoffswitch-inner:before {
+  content: "On";
+  padding-left: 10px;
+  background-color: #0091F2;
+  color: #FFFFFF; }
+
+.onoffswitch-inner:after {
+  content: "Off";
+  padding-right: 10px;
+  background-color: #030303;
+  color: #FFFFFF;
+  text-align: right; }
+
+.onoffswitch-switch {
+  display: block;
+  width: 32px;
+  margin: 0.5px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 69px;
+  border: 2px solid #E3E3E3;
+  border-radius: 24px;
+  transition: all 0.3s ease-in 0s; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; }
+
+/*Sliders*/
+.setting {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  align-items: center; }
+  @media (min-width: 944px) {
+    .setting {
+      width: 70%; } }
+  .setting label {
+    margin: 0 auto 0 0; }
+
+.data--settings select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 30px; }
+
+.settings--submitarea {
+  display: flex;
+  justify-content: space-between; }
+  .settings--submitarea button:nth-of-type(1) {
+    padding: 10px;
+    width: 45%;
+    background-color: #7477BF;
+    color: white;
+    border: none;
+    border-radius: 5px; }
+  .settings--submitarea button:nth-of-type(2) {
+    padding: 10px;
+    width: 45%;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    color: white; }
+
+/*Clearfix ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+/*Imports -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.grid__col--1 {
+  width: 100%; }
+
+.grid__col--2 {
+  width: 100%; }
+
+.grid__col--3 {
+  width: 100%; }
+
+.grid__col--4 {
+  width: 100%; }
+
+.grid__col--5 {
+  width: 100%; }
+
+.grid__col--6 {
+  width: 100%; }
+
+.grid__col--7 {
+  width: 100%; }
+
+.grid__col--8 {
+  width: 100%; }
+
+.grid__col--9 {
+  width: 100%; }
+
+.grid__col--10 {
+  width: 100%; }
+
+.grid__col--11 {
+  width: 100%; }
+
+.grid__col--12 {
+  width: 100%; }
+
+@media (min-width: 600px) {
+  .grid__col--1 {
+    width: 8.2174462705%; }
+
+  .grid__col--2 {
+    width: 16.5613147914%; }
+
+  .grid__col--3 {
+    width: 24.9051833123%; }
+
+  .grid__col--4 {
+    width: 33.2490518331%; }
+
+  .grid__col--5 {
+    width: 41.592920354%; }
+
+  .grid__col--6 {
+    width: 49.9367888748%; }
+
+  .grid__col--7 {
+    width: 58.2806573957%; }
+
+  .grid__col--8 {
+    width: 66.6245259166%; }
+
+  .grid__col--9 {
+    width: 74.9683944374%; }
+
+  .grid__col--10 {
+    width: 83.3122629583%; }
+
+  .grid__col--11 {
+    width: 91.6561314791%; }
+
+  .grid__col--12 {
+    width: 100%; } }
+@media (min-width: 1px) and (max-width: 768px) {
+  [class^="grid__col--"] {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    width: 100%; } }
+@media (min-width: 769px) {
+  [class^="grid__col--"] {
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    [class^="grid__col--"] + [class^="grid__col--"] {
+      margin-left: 0.1264222503%; } }
+
+/*# sourceMappingURL=style.css.map */
